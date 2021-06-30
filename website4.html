@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            background: aqua;
+        }
+
+        .container {
+            width: 360px;
+            height: 640px;
+            background: rgb(167, 151, 182);
+            transform: rotate(-30deg) skew(25deg) scale(.8);
+            position: relative;
+
+
+        }
+
+        .container img {
+            width: 360px;
+            height: 640px;
+
+            position: absolute;
+            transition: .5s;
+        }
+
+        .container:hover img:nth-child(1) {
+            transform: translate(30px, -30px);
+            opacity: .8;
+        }
+
+        .container:hover img:nth-child(2) {
+            transform: translate(60px, -60px);
+            opacity: .6;
+        }
+
+        .container:hover img:nth-child(3) {
+            transform: translate(90px, -90px);
+            opacity: .4;
+        }
+
+        .container:hover img:nth-child(4) {
+            transform: translate(120px, -120px);
+            opacity: .2;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <img src="2.jpg">
+        <img src="2.jpg">
+        <img src="2.jpg">
+        <img src="2.jpg">
+        <img src="2.jpg">
+        <img src="2.jpg">
+
+    </div>
+</body>
+</head>
+
+</html>
